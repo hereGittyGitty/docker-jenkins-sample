@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:bullseye
 LABEL maintainer="Lorenz Egginger 'lorenz@example.com'"
 ENV REFRESHED_AT 2024-01-14
 # hadolint ignore=DL3009
