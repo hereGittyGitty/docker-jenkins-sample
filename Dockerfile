@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 LABEL maintainer="Lorenz Egginger 'lorenz@example.com'"
 ENV REFRESHED_AT 2024-01-14
 # hadolint ignore=DL3009
