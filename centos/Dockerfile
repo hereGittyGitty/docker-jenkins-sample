@@ -1,5 +1,7 @@
 FROM centos:latest
-MAINTAINER James Turnbull "james@example.com"
-ENV REFRESHED_AT 2016-06-01
+LABEL maintainer="Lorenz Egginger 'lorenz@example.com'"
+ENV REFRESHED_AT 2024-01-14
+# hadolint ignore=DL3032,DL3033
 RUN yum -y install ruby rubygems rubygem-rake
-RUN gem install --no-rdoc --no-ri rspec ci_reporter_rspec
+# hadolint ignore=DL3028,DL3059
+RUN gem install --no-document rspec ci_reporter_rspec
